@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('troop.png');
+}
+
+body > * {
+    border: 7px solid transparent;
+    background-clip: padding-box, border-box;
+    box-decoration-break: clone;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px; 
+}
+
+h1 {
+    color: whitesmoke;
+    background-color: black;
+    background-size: cover;
+    height: 75px;
+    align-content: center;
+    text-align: center;
+    font-family: 'wallpoet', 'Courier New', monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'wallpoet', 'Courier New', monospace;
+    
+    border: 7px solid transparent;
+    background-clip: padding-box, border-box;
+    box-decoration-break: clone;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "header header header header"
+    "column1 column2 column3 column4"
+    "img img img img"    
+    "footer footer footer footer";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .86fr;
+    gap: 20px; 
+    font-family: 'times new roman', 'Courier New', monospace;  
+} 
+
+.column1 {
+    border: 1px solid black;
+    padding: 20px;
+    background-image: url('gold.png');
+    background-size: cover;
+}
+
+.column2 {
+    border: 1px solid black;
+    padding: 20px;
+    background-image: url('gold.png');
+    background-size: cover;
+}
+
+.column3 {
+    border: 1px solid black;
+    padding: 20px;
+    background-image: url('gold.png');
+    background-size: cover;
+}
+
+.column4 {
+    border: 1px solid black;
+    padding: 20px;
+    background-image: url('gold.png');
+    background-size: cover;
+}
+
+h2 {
+    font-family: 'wallpoet', 'Courier New', monospace;
+    background-color: black;
+    color: white;
+}
+
+
+.column1 .text, .column2 .text, .column3 .text, .column4 .text {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    align-items: flex-end ;
+    border: 1px solid black;
+}
+
+@font-face {
+    font-family: 'SixtyFour', monospace;
+    src: url('/assets/Sixtyfour-Regular.ttf');
+}

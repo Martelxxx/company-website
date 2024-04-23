@@ -1,0 +1,108 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'wallpoet', 'Courier New', monospace;
+    
+    border: 7px solid transparent;
+    background-clip: padding-box, border-box;
+    box-decoration-break: clone;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('net.png');
+}
+
+body > * {
+    border: 7px solid transparent;
+    background-clip: padding-box, border-box;
+    box-decoration-break: clone;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px; 
+}
+
+body p {
+    font-family: 'wallpoet', 'Courier New', monospace;
+    color: whitesmoke;
+    background-color: black;
+}
+
+h1 {
+    color: whitesmoke;
+    background-color: black;
+    background-size: cover;
+    height: 75px;
+    align-content: center;
+    text-align: center;
+    font-family: 'wallpoet', 'Courier New', monospace;
+}
+
+h2, h3 {
+    font-family: 'wallpoet', 'Courier New', monospace;
+    background-color: black;
+    color: white;
+}
+
+/* Container for the contact form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for labels */
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  /* General styling for all input fields and textareas */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  /* Focus state for input fields */
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #0088cc;
+    outline: none;
+  }
+  
+  /* Style for the submit button */
+  .contact-form button {
+    padding: 10px 20px;
+    background: #0088cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  /* Hover effect for the send button */
+  .contact-form button:hover {
+    background: #006699;
+  }

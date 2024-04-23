@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'wallpoet', 'Courier New', monospace;
+    
+    border: 7px solid transparent;
+    background-clip: padding-box, border-box;
+    box-decoration-break: clone;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('mission.png');
+}
+
+body > * {
+    border: 7px solid transparent;
+    background-clip: padding-box, border-box;
+    box-decoration-break: clone;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px; 
+}
+
+body p {
+    font-family: 'wallpoet', 'Courier New', monospace;
+    color: whitesmoke;
+    background-color: black;
+}
+
+h1 {
+    color: whitesmoke;
+    background-color: black;
+    background-size: cover;
+    height: 75px;
+    align-content: center;
+    text-align: center;
+    font-family: 'wallpoet', 'Courier New', monospace;
+}
+
+h2, h3 {
+    font-family: 'wallpoet', 'Courier New', monospace;
+    background-color: black;
+    color: white;
+}

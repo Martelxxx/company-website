@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<%- include('./partials/nav.ejs')%>
+<body>
+    
+<h1>Contact Us</h1>
+<hr>
+<div class="contact-form">
+    <form action="/submit-contact" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<h2>Disclaimer</h2>
+<p>We've been expecting you. In fact, we've known about your interest for quite some time now. Our channels are always open, and we know exactly how you like to communicate. Whether you're reaching out by phone, email, or through the whispers in the shadows, we will find you. Your presence is not unnoticed, and we've been watching.</p>
+
+    <p>Send us a message. We already know what you're going to say, but go ahead and say it. Just know that our response might come in unexpected ways. You may not see us, but we see you. We know where you are. Talk to us. You can't hide.</p>
+    
+    <p>Contact details:
+    <br><br>
+    Phone: 555-555-5555
+    <br>
+    Email: contact@blackoperationsinc.com
+    <br><br>
+    Your message is important to us. We've taken great care to ensure it reaches the right eyes and ears. Don't worry, we'll be in touch when the time is right. No need to look over your shoulder; we're already there.</p>
+
+</body>
+</html>

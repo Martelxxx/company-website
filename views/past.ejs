@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/past.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <title>Past Work</title>
+</head>
+<%- include('./partials/nav.ejs')%>
+<body>
+    <h1>Welcome to Past Work Page</h1>
+    <hr>
+
+    <h2>Operation: <%= covertOperations.operationCode %></h2>
+      <p>Mission Name: <%= covertOperations.missionName %></p>
+      <p>Type: <%= covertOperations.operationType %></p>
+      <p>Location: <%= covertOperations.location.country %></p>
+    <p>Period: From <b><%= covertOperations.timeFrame.startDate %></b> to <b><%= covertOperations.timeFrame.endDate%></b></p>
+    <p>Clearance: <%= covertOperations.levelOfSecrecy %></p>
+    <p><h3>Mission Overview:</h3></p>
+    <p><%= covertOperations.missionPurpose %> 
+       <br><br>
+       <%= covertOperations.operationOutcome.report%> 
+       <br><br>
+       <%= covertOperations.operationOutcome.additionalNotes%>
+    </p>
+</body>
+</html>

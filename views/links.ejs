@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<%- include('./partials/nav.ejs')%>
+<body>
+    
+    <% partners.forEach(partner => { %>
+        <div>
+            <h2><%= partner.name %></h2>
+            <p>Website: <a href="<%= partner.url %>"><%= partner.url %></a></p>
+        </div> 
+    <% }); %>
+</body>
+</html>

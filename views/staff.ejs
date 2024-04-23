@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/staff.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<%- include('./partials/nav.ejs')%>
+<body>
+    <h1>Meet the Team</h1>
+    <div class="staff">
+    
+
+    <div class="staffA">
+        <img src="/warrior.png" alt="agent">
+        <div class="text">
+    <p>Code Name: <%= agents[0].codeName %> <br> Role: "<%= agents[0].role %>"</p> 
+    <p> "Visible, but unstoppable." </p>
+    
+    </div>
+    <hr>
+    </div>
+
+    <div class="staffB">
+        <img src="/warrionJ.png" alt="agent">
+    <div class="text">
+    <p>Code Name: <%= agents[1].codeName %> <br> Role: "<%= agents[1].role %>"</p>
+    <p> "Precision-focused intelligence" </p>
+
+</div>
+    <hr>
+    
+    </div>
+
+    <div class="staffC">
+        <img src="/warrionR.png" alt="agent">
+    <div class="text">
+    <p>Code Name: <%= agents[2].codeName %> <br> Role: "<%= agents[2].role %>" </p>
+    <p> "Autonomous reconnaissance unit" </p>
+
+</div>
+    
+    <hr>
+    
+    </div>
+
+    </div>
+</body>
+</html>
